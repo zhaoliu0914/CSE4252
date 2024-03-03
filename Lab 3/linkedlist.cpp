@@ -115,7 +115,11 @@ void DequeLinkedList::add_head(int val) {
 
 void DequeLinkedList::delete_head() {
     if (this->head != nullptr) {
-        this->head = this->head->next;
+        Node* nextNode = this->head->next;
+
+        delete this->head;
+
+        this->head = nextNode;
     }
 }
 
