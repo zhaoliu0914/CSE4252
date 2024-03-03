@@ -18,12 +18,17 @@ class LinkedList {
 public:
     LinkedList();
 
+    Node* head = nullptr;
+    std::string type;
+
     // Please don't change the function signature add_tail and delete_tail
     // But you may need to add other member variables and/or other member functions
 
     void add_tail(int val);
     void delete_tail();
-    
+
+    friend std::ostream& operator<< (std::ostream &os, const LinkedList &list);
+
 };
 
 class DequeLinkedList : public LinkedList {
@@ -37,7 +42,7 @@ public:
 
     void add_head(int val);
     void delete_head();
-    
+
 };
 
 
