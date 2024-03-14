@@ -6,4 +6,5 @@ cmake-build-debug/
 /Lab 3/linkedlist
 CMakeLists.txt
 .DS_Store
+**/a.out
 
