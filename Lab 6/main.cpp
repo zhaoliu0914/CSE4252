@@ -11,7 +11,7 @@ int main() {
 
     for (int i = 0; i < 100; ++i) {
         array.push_back(100 - 2 * i);
-        decArr.push_back((100.0 - i)/ 0.5);
+        decArr.push_back((100.0 - i) / 0.5);
     }
 
     parallelSort(array.begin(), array.end());
